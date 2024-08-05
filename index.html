@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -77,10 +78,13 @@
             <h2>TOP DEALS</h2>
             <p>Up to <span class="highlight">30%</span> off sleeping bag liners deals</p>
             <div class="slider">
+                <button class="slider-button prev" id="prev-btn" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
                 <div class="deals-container">
                     <div class="deal-item">
                         <img src="images/deal/1.png" alt="Flannel Sleeping Bag">
-                        <p>Flannel Sleeping Bag for Adult Portable Extra Wide Sleep Bag for Camping Backpacking...</p>
+                        <p>(-10F to 10F) Mummy Sleeping Bag, Sizes (Reg & Tall), Multi-Down Fill (650-Fill-Power-Down + StratusLoft) with Compression and Stuff Sack</p>
                         <p class="price">$100 <span class="discount">-30%</span></p>
                         <div class="rating">
                             <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -89,7 +93,7 @@
                     </div>
                     <div class="deal-item">
                         <img src="images/deal/2.png" alt="Shadow Mountain Sleeping Bag">
-                        <p>Shadow Mountain 30-Degree Hooded Sleeping Bag, 35"x88"</p>
+                        <p>Flannel Sleeping Bag for Adult Portable Extra Wide Sleep Bag for Camping Backpacking 18℉-54℉ Black</p>
                         <p class="price">$100 <span class="discount">-30%</span></p>
                         <div class="rating">
                             <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -98,7 +102,7 @@
                     </div>
                     <div class="deal-item">
                         <img src="images/deal/3.png" alt="Warm Weather Sleeping Bag">
-                        <p>50-Degree Warm Weather Rectangular Sleeping Bag, Red, 33"x75"</p>
+                        <p>Shadow Mountain 30-Degree Hooded Sleeping Bag, 35"x88"</p>
                         <p class="price">$100 <span class="discount">-30%</span></p>
                         <div class="rating">
                             <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -107,14 +111,17 @@
                     </div>
                     <div class="deal-item">
                         <img src="images/deal/4.png" alt="Cozy Sleeping Bag">
-                        <p>Cozy Sleeping Bag for Kids, Warm and Comfortable</p>
-                        <p class="price">$80 <span class="discount">-20%</span></p>
+                        <p>50-Degree Warm Weather Rectangular Sleeping Bag, Red, 33"x75"</p>
+                        <p class="price">$100 <span class="discount">-30%</span></p>
                         <div class="rating">
                             <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                         </div>
                         <button>SHOP NOW</button>
                     </div>
                 </div>
+                <button class="slider-button next" id="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
             
         </div>
@@ -132,6 +139,59 @@
         </div>
     </div>
     
+    <div class="best-sellers-section">
+        <div class="best-sellers-wrapper">
+            <h2>BEST SELLERS</h2>
+            <div class="best-slider">
+                <button class="best-slider-button best-prev" id="best-prev-btn" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="best-sellers-container">
+                    <div class="best-seller-item">
+                        <img src="images/best-seller/1.png" alt="Cozy Sleeping Bag">
+                        <p>12-Person Cabin Tent, with Convertible Screen Room</p>
+                        <p class="best-price">$100 <span class="best-discount">-30%</span></p>
+                        <div class="best-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <button>SHOP NOW</button>
+                    </div>
+                    <div class="best-seller-item">
+                        <img src="images/best-seller/2.png" alt="Flannel Sleeping Bag">
+                        <p>1-Person Backpacking Tent, with Large Door for Easy Entry</p>
+                        <p class="best-price">$100 <span class="best-discount">-30%</span></p>
+                        <div class="best-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <button>SHOP NOW</button>
+                    </div>
+                    <div class="best-seller-item">
+                        <img src="images/best-seller/3.png" alt="Shadow Mountain Sleeping Bag">
+                        <p>Trail Ridge 50 Liter Backpacking Backpack, Blue</p>
+                        <p class="best-price">$100 <span class="best-discount">-30%</span></p>
+                        <div class="best-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <button>SHOP NOW</button>
+                    </div>
+                    <div class="best-seller-item">
+                        <img src="images/best-seller/4.png" alt="Warm Weather Sleeping Bag">
+                        <p>Flannel Sleeping Bag for Adult Portable Extra Wide Sleep Bag for Camping Backpacking 18℉-54℉ Black</p>
+                        <p class="best-price">$100 <span class="best-discount">-30%</span></p>
+                        <div class="best-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <button>SHOP NOW</button>
+                    </div>
+                </div>
+                <button class="best-slider-button best-next" id="best-next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
     <script src="js/script.js"></script>
+    <script src="js/best-seller.js"></script>
 </body>
 </html>
